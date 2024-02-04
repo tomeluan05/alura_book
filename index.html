@@ -108,7 +108,7 @@
                     <img src="./assets/images/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/images/Liderança.svg" alt="Livro sobre liderança em design da alura books">
+                    <img src="./assets/images/Lideranca.svg" alt="Livro sobre liderança em design da alura books">
                 </div>
                 <div class="swiper-slide">
                     <img src="./assets/images/Javascript.svg" alt="Livro sobre javasript assetivo da alura books">
@@ -353,13 +353,23 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            speed: 400,
-            spaceBetween: 10,
-            slidesPerView: 3,
-            pagination: {
-            el: '.swiper-pagination',
-        },
-        });
-    </script>
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                breakpoints: {
+                    1024: {
+                        spaceBetween: 50
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    
 </body>
 </html>
